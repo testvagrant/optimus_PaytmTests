@@ -13,13 +13,13 @@ public class LoginSteps extends BaseSteps implements En {
         return getDriverInstanceFor("tester");
     }
 
-    @Given("^I am on the login page$")
+/*    @Given("^I am on the login page$")
     public void iAmOnTheLoginPage() throws Throwable {
         getDriver();
-    }
+    }*/
 
 
-    @And("^I enter my mobile number as ([^\"]*) and password as ([^\"]*) and login$")
+    @Given("^I enter my mobile number as ([^\"]*) and password as ([^\"]*) and login$")
     public void iEnterMyMobileNumberAs(String mobileNumber,String password) throws Throwable {
         new LoginPage(getDriver()).enterMobileNumber(mobileNumber);
         new LoginPage(getDriver()).enterPassword(password);

@@ -13,31 +13,42 @@ public class PaymentPage extends BasePage {
 
     @FindAll({
             @FindBy(xpath = "//android.view.View[@index=4]/android.widget.EditText"),
-            @FindBy(xpath = "//android.view.View[@index=2]/android.widget.EditText")
+            @FindBy(xpath = "//android.view.View[@index=2]/android.widget.EditText"),
+            @FindBy(id = "card-number")
     })
     private WebElement cardNo;
 
     @FindAll({
             @FindBy(xpath = "//android.view.View[@index=5]/android.widget.Button"),
-            @FindBy(xpath = "//android.view.View[@index=3]/android.widget.Button")
+            @FindBy(xpath = "//android.view.View[@index=3]/android.widget.Button"),
+            @FindBy(xpath = "//android.view.View[@index=1]/android.widget.Button"),
+            @FindBy(xpath = "//android.view.View[@index=2]/android.widget.Spinner"),
+            @FindBy(id = "dcMonth")
     })
     private WebElement monthTab;
 
-    @FindBy(xpath = "//android.widget.ListView/android.widget.CheckedTextView[@index=3]")
+    @FindAll({
+            @FindBy(xpath = "//android.widget.ListView/android.widget.CheckedTextView[@index=3]"),
+    })
     private WebElement month;
 
     @FindAll({
             @FindBy(xpath = "//android.view.View[@index=4]/android.widget.Button"),
-            @FindBy(xpath = "//android.view.View[@index=6]/android.widget.Button")
+            @FindBy(xpath = "//android.view.View[@index=6]/android.widget.Button"),
+            @FindBy(xpath = "//android.view.View[@index=2]/android.widget.Spinner"),
+            @FindBy(id = "dcYear")
     })
     private WebElement yearTab;
 
-    @FindBy(xpath = "//android.widget.ListView/android.widget.CheckedTextView[@index=7]")
+    @FindAll({
+            @FindBy(xpath = "//android.widget.ListView/android.widget.CheckedTextView[@index=7]"),
+    })
     private WebElement year;
 
     @FindAll({
             @FindBy(xpath = "//android.view.View[@index=7]/android.widget.EditText"),
-            @FindBy(xpath = "//android.view.View[@index=5]/android.widget.EditText")
+            @FindBy(xpath = "//android.view.View[@index=5]/android.widget.EditText"),
+            @FindBy(xpath = "//android.view.View[@index=3]/android.widget.EditText")
     })
     private WebElement cvv;
 

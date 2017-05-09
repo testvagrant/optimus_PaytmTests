@@ -1,9 +1,6 @@
 Feature: Login Feature
   As a user I should be able to log into my account.
 
-  Background: Login
-    Given I am on the login page
-
   @paytmLogin-facebook
   Scenario: I want to log into my account through facebook
     And I click on facebook button

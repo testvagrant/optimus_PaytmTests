@@ -12,7 +12,7 @@ public class LoginPage extends BasePage {
     private String app_package_name = "net.one97.paytm:id/";
 
     private By mobileNumber = By.id(app_package_name + "edit_username");
-    private By password = By.id(app_package_name + "lyt_password");
+    private By password = By.id(app_package_name + "edit_password");
     private By loginButton = By.id(app_package_name + "lyt_sign_in_button");
     private By facebookButton = By.id(app_package_name + "btn_facebook");
     private By doItLater = By.xpath("//android.widget.TextView[1]");
