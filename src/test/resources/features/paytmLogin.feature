@@ -20,8 +20,8 @@ Feature: Login Feature
     And I proceed to enter the mobile number
     And I enter the mobile number as 7204515609 and amount as 10 and I proceed
     And I enter my card number as 1234123412341234
-    And I enter my cvv as 221
     And I enter the month and year
+    And I enter my cvv as 221
     And I choose to pay now
 
   @paytmLogin-error
