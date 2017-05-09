@@ -21,8 +21,7 @@ public class PaymentPage extends BasePage {
     @FindAll({
             @FindBy(xpath = "//android.view.View[@index=5]/android.widget.Button"),
             @FindBy(xpath = "//android.view.View[@index=3]/android.widget.Button"),
-            @FindBy(xpath = "//android.view.View[@index=1]/android.widget.Button"),
-            @FindBy(xpath = "//android.view.View[@index=2]/android.widget.Spinner"),
+            @FindBy(xpath = "//android.view.View[@index=1]/android.widget.Spinner"),
             @FindBy(id = "dcMonth")
     })
     private WebElement monthTab;
@@ -48,7 +47,7 @@ public class PaymentPage extends BasePage {
     @FindAll({
             @FindBy(xpath = "//android.view.View[@index=7]/android.widget.EditText"),
             @FindBy(xpath = "//android.view.View[@index=5]/android.widget.EditText"),
-            @FindBy(xpath = "//android.view.View[@index=3]/android.widget.EditText")
+            @FindBy(xpath = "//android.view.View[@index=3]/android.widget.EditText[@index=2]")
     })
     private WebElement cvv;
 
