@@ -18,7 +18,8 @@
           "appActivity": "net.one97.paytm.AJRJarvisSplash",
           "appPackage": "net.one97.paytm",
           "avdLaunchTimeout": 300000,
-          "useKeystore": false
+          "useKeystore": false,
+          "autoGrantPermissions": true
         }
       },
       "deviceState": {
