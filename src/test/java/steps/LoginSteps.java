@@ -13,14 +13,10 @@ public class LoginSteps extends BaseSteps implements En {
         return getDriverInstanceFor("tester");
     }
 
-/*    @Given("^I am on the login page$")
-    public void iAmOnTheLoginPage() throws Throwable {
-        getDriver();
-    }*/
-
-
     @Given("^I enter my mobile number as ([^\"]*) and password as ([^\"]*) and login$")
     public void iEnterMyMobileNumberAs(String mobileNumber,String password) throws Throwable {
+        new LoginPage(getDriver()).clickOnDenyPermission();
+        new LoginPage(getDriver()).clickOnDenyPermission();
         new LoginPage(getDriver()).enterMobileNumber(mobileNumber);
         new LoginPage(getDriver()).enterPassword(password);
         new LoginPage(getDriver()).clickOnLogin();
@@ -53,6 +49,8 @@ public class LoginSteps extends BaseSteps implements En {
 
     @And("^I click on \"do it later\"$")
     public void clickOnDoItLater() throws Throwable{
+        new LoginPage(getDriver()).clickOnDenyPermission();
+        new LoginPage(getDriver()).clickOnDenyPermission();
         new LoginPage(getDriver()).clickOnDoItLater();
     }
 }

@@ -2,6 +2,7 @@ Feature: Login Feature
   As a user I should be able to log into my account.
 
   Background: Login
+#    Given I click on "do it later"
     Given I enter my mobile number as 9430790750 and password as dcba4321 and login
 
   @paytm-mobile-recharge
